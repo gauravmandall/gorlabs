@@ -34,6 +34,11 @@ if (process.env.NODE_ENV === 'production') {
       destination: 'https://cal.com/gauravmandall/30min',
       permanent: false,
     },
+    {
+      source: '/code',
+      destination: 'https://github.com/gorlabscom/gorlabs',
+      permanent: true,
+    },
   ];
 
   nextConfig.redirects = redirects;

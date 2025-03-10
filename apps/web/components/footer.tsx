@@ -6,18 +6,32 @@ import Link from 'next/link';
 export const Footer = () => {
   const navigationItems = [
     {
-      title: 'Home',
+      title: 'Company',
       href: '/',
       description: '',
-    },
-    {
-      title: 'Pages',
-      description: 'Managing a small business today is already tough.',
       items: [
         {
-          title: 'Blog',
-          href: '/blog',
+          title: 'About',
+          href: '/about',
         },
+        {
+          title: 'grants',
+          href: 'https://grants.gorlabs.com',
+        },
+        {
+          title: 'Source code',
+          href: '/code',
+        },
+      ],
+    },
+    {
+      title: 'Resources',
+      description: 'Managing a small business today is already tough.',
+      items: [
+        //   {
+        //     title: 'Blog',
+        //     href: '/blog',
+        //   },
       ],
     },
     {
@@ -25,7 +39,7 @@ export const Footer = () => {
       description: 'We stay on top of the latest legal requirements.',
       items: [
         {
-          title: 'Legal',
+          title: 'Terms & Privacy',
           href: '/legal',
         },
       ],
@@ -50,7 +64,8 @@ export const Footer = () => {
                   gorlabs
                 </h2>
                 <p className="max-w-lg text-left text-foreground/75 text-lg leading-relaxed tracking-tight">
-                  This is the start of something new.
+                  Our mission is to providing best blockchain Infrastructure by
+                  making Gorlabs effortless, affordable, and accessible to all.
                 </p>
               </div>
               <Status />
@@ -103,6 +118,23 @@ export const Footer = () => {
                 </div>
               ))}
             </div>
+          </div>
+          <div className='mx-auto mt-16 flex max-w-7xl flex-col items-center justify-between space-y-4 text-sm text-zinc-500 md:flex-row md:space-y-0'>
+            <div className="flex items-center space-x-4">
+                <div className='mb-4 flex items-center gap-1'>
+                  © 2025 Gorlabs LLC. All rights reserved.
+                </div>
+            </div>
+            {/* <div className="flex items-center space-x-4">
+              <Link
+                href="x.com/gauravmandall"
+                className='transition-colors duration-200 ease-in-out hover:text-black dark:hover:text-white'
+              >
+                Say Hello 𝕏
+              </Link>
+              <span>•</span>
+              <span>❤️ Thanks for visiting!</span>
+            </div> */}
           </div>
         </div>
       </div>
